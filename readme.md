@@ -1,19 +1,7 @@
-# Getting Started
+# What is this?
 
-This project was bootstrapped with [imba-base-template](https://github.com/imba/imba-base-template).
+This is an [Imba](https://imba.io/) port of the to-do app created by Fireship in [this video](https://youtu.be/cuHDQhDhvPE).
 
-## Available Scripts
+# Deployment
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.
-You will also see any lint errors in the console.
-
-### `npm run build`
-
-Builds the app for production to the `dist` folder.
+This is deployed at https://fireship-todo-imba.vercel.app/
