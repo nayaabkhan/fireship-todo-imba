@@ -2,10 +2,9 @@ tag app
 	todos\Array[string] = []
 	todoText = ""
 
-	def mount
+	def setup
 		const existingTodos = window.localStorage.getItem("todos")
 		todos = JSON.parse(existingTodos) || []
-		imba.commit!
 
 	def add
 		todos.push(todoText)
