@@ -7,7 +7,7 @@ tag app
 		todos = JSON.parse(existingTodos) || []
 		imba.commit!
 
-	def add()
+	def add
 		todos.push(todoText)
 		window.localStorage.setItem("todos", JSON.stringify(todos))
 		todoText = ""
@@ -20,7 +20,7 @@ tag app
 			<ul> for todo in todos
 				<li> todo
 
-			<form @submit.prevent=(add)>
+			<form @submit.prevent=add>
 				<input type="text" bind=todoText>
 
 imba.mount <app>
