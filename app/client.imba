@@ -13,8 +13,8 @@ tag app
 		todoText = ""
 
 	css d:flex ai:center jc:center
-		.container
-			d:flex fld:column
+		.container d:flex fld:column
+		form d:flex g:2
 	<self>
 		<div.container>
 			<ul> for todo in todos
@@ -22,5 +22,6 @@ tag app
 
 			<form @submit.prevent=add>
 				<input type="text" bind=todoText>
+				<input type="submit" value="Add Todo">
 
 imba.mount <app>
